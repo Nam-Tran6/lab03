@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Meta Tags for Charset, Viewport, Description, Keywords, Author-->
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CWA Help Desk Appointment">
+    <meta name="keywords" content="student details, unit information, issue, preferred date">
+    <meta name="author" content="Kha Nam Tran">
+</head>
+
+<body>
+    <header>
+    <figure>
+        <!--Link to Swinburne Website-->
+        <a href="https://www.swinburne.edu.au">
+            <!--Swinburne Logo-->
+            <img src="image/logo.png" alt="Swinburne Logo" title="Swinburne University of Technology">    
+        </a>
+    </figure>
+
+    <section id="description">
+        <h1>CWA Help Desk Appointment</h1>
+        <p>The Help Desk is located in ATC620. Open 10:30 to 19:00 Monday to Friday</p>
+        <p>Check Blackboard for when CWA tutors will be there.</p>
+    </section> 
+    </header>
+
+    <main>
+        <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+            <fieldset>
+                <legend>Student details</legend>
+                <!--student ID-->
+                <p> <label for="stu_id">Student ID</label>
+                    <input type="text" name="stu_id" id="stu_id" 
+                    pattern="[0-9]{7,10}" title="Numerical digits must range between 7 and 10" 
+                    required="required" placeholder="e.g 104123123">
+                </p>
+
+                <!--Given Name-->
+                <p> <label for="given_name">Given Name</label>
+                    <input type="text" name="given_name" id="given_name" 
+                    maxlength="15" required="required">
+                    
+                &nbsp;
+                    
+                    <label for="family_name">Family Name</label>
+                    <input type="text" name="family_name" id="family_name" 
+                    pattern="[a-zA-Z]{0,15}" 
+                    maxlength="15" required="required">
+                </p>
+            </fieldset>
+
+            <input type="submit" value="Test">
+        </form>
+
+    </main>
+</body>
+
+    
+</html>
